@@ -10,8 +10,7 @@ Each image file in this directory, has its distance from each landmark calculate
 <img width="524" alt="Screenshot 2023-09-25 191858" src="https://github.com/Amber-Abuah/Mediapipe-Pose-Comparison/assets/107321078/e7473c3f-e588-4f6a-a878-9eba003774b6">  
 The distance from landmark 0 to landmark 1 is calculated, then landmark 1 to landmark 2... until distances have been calculated between all 33 pose landmarks.  
   
-This process takes place on every image within the /yoga directory.
-We then store the minimum and maximum values calculated for each distance amongst all images and use this for comparison for the test pose.  
+This process takes place on every image within the /yoga directory. The minimum and maximum values are calculated for each distance amongst all images and used for comparison against the test pose.  
 
 The test pose has its distance between all 33 landmarks calculated. If 75% of the landmark distances falls within the min max range calculated from the training images, then the pose is deemed accurate. If not, it is deemed unaccurate.
 
