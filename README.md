@@ -1,12 +1,9 @@
 # Mediapipe Pose Comparison
-
 A python program capable of comparing poses within images to check for accuracy, with the help of Mediapipe.
-
-This example compares the yoga 'Warrior Pose' as shown below.  
+The pose used is the yoga 'Warrior Pose' as shown below.  
 ![istockphoto-1335980515-170667a](https://github.com/Amber-Abuah/Mediapipe-Pose-Comparison/assets/107321078/b0f6a149-8c1b-4f31-adce-520cb3164498)  
 The /yoga directory contains image files that are used for comparison to a test image.
-  
-Each image file in this directory, has its distance from each landmark calculated as so
+Each image file in this directory, has its distance from each landmark calculated as so  
 <img width="524" alt="Screenshot 2023-09-25 191858" src="https://github.com/Amber-Abuah/Mediapipe-Pose-Comparison/assets/107321078/e7473c3f-e588-4f6a-a878-9eba003774b6">  
 The distance from landmark 0 to landmark 1 is calculated, then landmark 1 to landmark 2... until distances have been calculated between all 33 pose landmarks.  
   
