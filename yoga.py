@@ -33,7 +33,7 @@ for image in pose_images:
 def calculate_distance(c1, c2):
     return math.sqrt( c1.x ** 2  + c1.y ** 2 + c1.z ** 2 + c2.x ** 2 + c2.y ** 2 + c2.z ** 2)
 
-# Calculate the min and max values for all possible landmark distances across all sample images
+# Calculate the min and max values for all landmark distances across all sample images
 min_max_distances = []
 landmarks_num = len(results[0].pose_landmarks.landmark)
 
@@ -49,7 +49,7 @@ for i in range (landmarks_num):
 # Testing --------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Load and find landmarks for test image
-test_pose = cv2.imread("testpose.jpg")
+test_pose = cv2.imread("test/pose1.jpg")
 test_pose = cv2.resize(test_pose, (0,0), fx=1000/test_pose.shape[0], fy=1000/test_pose.shape[0]) # Scale to similar size as training data
 
 with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
