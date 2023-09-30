@@ -1,4 +1,4 @@
-# Mediapipe-Pose-Comparison
+# Mediapipe Pose Comparison
 
 A python program capable of comparing poses within images to check for accuracy, with the help of Mediapipe.
 
